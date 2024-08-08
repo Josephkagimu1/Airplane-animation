@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    overflow: hidden;
+} */
+
+.background {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.road {
+    width: 100%;
+}
+
+.plane {
+    width: 500px;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 75%;
+    animation: move 4s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-400px);
+    }
+    100% {
+        transform: translateX(-1200px) translateY(-500px) rotate(30deg);
+    }
+}
